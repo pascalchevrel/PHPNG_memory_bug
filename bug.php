@@ -12,6 +12,4 @@ $locales = ['af', 'ak', 'ar', 'as', 'ast', 'be', 'bg', 'bn-BD', 'bn-IN', 'br', '
 foreach ($locales as $locale_code) {
     include __DIR__ . "/arrays/cache_{$locale_code}.php";
     error_log($locale_code . ': ' . memory_get_usage(true));
-    unset($tmx);
 }
-die;
